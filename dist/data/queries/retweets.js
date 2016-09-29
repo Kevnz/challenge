@@ -9,7 +9,7 @@ module.exports = function retweets(minNumberOfRetweets, limit, offset) {
     offset: offset
   };
   // total count
-  return knex('tweets').count('user_name').where('retweet_count', '>=', minNumberOfRetweets).then(function (count) {
+  return knex('tweets').count('user_name').where('retweet_count', '>', minNumberOfRetweets).then(function (count) {
     results.count = count[0]["count(`user_name`)"];
     return null;
   }).then(function () {
