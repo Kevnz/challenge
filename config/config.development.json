@@ -1,0 +1,8 @@
+{
+  "database-connection": {
+    "client": "sqlite3",
+    "connection": {
+    "filename": "./tweetdb.sqlite"
+    }
+  }
+}

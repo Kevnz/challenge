@@ -1,0 +1,14 @@
+<h1><%= title %></h1>
+<p>Examples of the API endpoints</p>
+<ol>
+  <li><a href="/api/tweets/search?q=terrorist">Find all tweets that match a given string.</a>  <a href="/api/tweets/search?q=terrorist&page=3">Page 4</a></li>
+  <li><a href="/api/tweets/username/Lorraine611">Find all tweets by a given user name</a></li>
+  <li><a href="/api/tweets/screenname/bonartgl">Find all tweets by a given screen name</a></li>
+  <li><a href="/api/tweets/between?start=2016-09-18%2013:01:06&end=2016-09-19%2013:01:56">Find all tweets between the given date/time</a></li>
+  <li><a href="/api/tweets/retweeted/1200">Find all tweets with more than x retweet counts</a></li>
+  <li><a href="/api/tweet/777774163025100800">Find a tweet by tweet id</a></li>
+  <li><a href="/api/user/u/Lorraine611">Find a user by user name</a></li>
+  <li><a href="/api/user/s/bonartgl">Find a user by screen name</a></li>
+</ol>
+<%- contentFor('pageTitle') %>
+<%= title %>
